@@ -620,46 +620,49 @@ footer{
           <div class="ct-dot"></div>
           <div>
             <div class="ct-key">Email</div>
-            <div class="ct-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="781e19110a0b010b13170a1d1949381f15191114561b1715">[email&#160;protected]</a></div>
+            <div class="ct-val">fairsyskorea1@gmail.com</div>
           </div>
         </div>
       </div>
     </div>
     <div class="contact-right">
+      <form action="https://formspree.io/f/xbdpbgvp" method="POST" onsubmit="if(!document.getElementById('privacyAgree').checked){alert('개인정보 수집·이용에 동의해 주세요.');return false}">
       <div class="form-title">견적 문의</div>
       <div class="field-row">
         <div class="field">
           <label>이름</label>
-          <input type="text" placeholder="홍길동">
+          <input type="text" name="이름" placeholder="홍길동" required>
         </div>
         <div class="field">
           <label>연락처</label>
-          <input type="tel" placeholder="010-0000-0000">
+          <input type="tel" name="연락처" placeholder="010-0000-0000" required>
         </div>
       </div>
       <div class="field">
         <label>이메일</label>
-        <input type="email" placeholder="example@email.com">
+        <input type="email" name="이메일" placeholder="example@email.com">
       </div>
       <div class="field">
         <label>문의 유형</label>
-        <select>
+        <select name="문의유형">
           <option>종합관리 견적</option>
           <option>시설관리 견적</option>
           <option>경비/보안 견적</option>
           <option>청소/미화 견적</option>
           <option>인력파견 문의</option>
+          <option>소독 문의</option>
+          <option>관리비부과 문의</option>
           <option>협력 문의</option>
           <option>기타</option>
         </select>
       </div>
       <div class="field">
         <label>건물 정보</label>
-        <input type="text" placeholder="건물명, 위치, 규모">
+        <input type="text" name="건물정보" placeholder="건물명, 위치, 규모">
       </div>
       <div class="field">
         <label>내용</label>
-        <textarea placeholder="문의 내용을 적어주세요"></textarea>
+        <textarea name="내용" placeholder="문의 내용을 적어주세요" required></textarea>
       </div>
       <div class="field" style="margin-bottom:24px">
         <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:.82rem;color:var(--ink-50);line-height:1.5">
@@ -667,7 +670,8 @@ footer{
           <span>[필수] 견적 문의를 위한 <a href="#" style="color:var(--ink);text-decoration:underline;font-weight:600" onclick="document.getElementById('privacyModal').style.display='flex';return false">개인정보 수집·이용</a>에 동의합니다. (이름, 연락처, 이메일을 수집하며, 문의 처리 완료 후 지체 없이 파기합니다.)</span>
         </label>
       </div>
-      <button class="btn-submit" onclick="if(!document.getElementById('privacyAgree').checked){alert('개인정보 수집·이용에 동의해 주세요.');return false}">문의 보내기</button>
+      <button type="submit" class="btn-submit">문의 보내기</button>
+      </form>
     </div>
   </div>
 </div>
