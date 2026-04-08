@@ -185,7 +185,7 @@ header{
   font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.02em;
 }
 .svc-grid{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
   border-top:1px solid rgba(255,255,255,.08);
   position:relative;z-index:1;
 }
@@ -196,7 +196,7 @@ header{
   transition:background .35s;
   cursor:default;
 }
-.svc-card:last-child{border-right:none}
+.svc-card:nth-child(4n){border-right:none}
 .svc-card:hover{background:rgba(232,151,63,.06)}
 .svc-num{
   font-family:'DM Serif Display',serif;font-size:1.6rem;
@@ -368,7 +368,8 @@ footer{
 /* ————— MOBILE ————— */
 @media(max-width:960px){
   .svc-grid{grid-template-columns:repeat(3,1fr)}
-  .svc-card:nth-child(3){border-right:none}
+  .svc-card:nth-child(4n){border-right:1px solid rgba(255,255,255,.06)}
+  .svc-card:nth-child(3n){border-right:none}
   .port-grid{grid-template-columns:repeat(3,1fr)}
   .hero-row{grid-template-columns:1fr;gap:32px}
   .about-layout{grid-template-columns:1fr}
@@ -442,9 +443,9 @@ footer{
     </div>
   </div>
   <div class="hero-divider">
-    <div class="hd-item"><div class="hd-num">40+</div><div class="hd-label">관리 건물</div></div>
-    <div class="hd-item"><div class="hd-num">2014</div><div class="hd-label">설립년도</div></div>
-    <div class="hd-item"><div class="hd-num">5</div><div class="hd-label">전문 서비스</div></div>
+    <div class="hd-item"><div class="hd-num" style="font-size:1.4rem">서울·수도권 다수</div><div class="hd-label">관리 건물</div></div>
+    <div class="hd-item"><div class="hd-num">2020</div><div class="hd-label">설립년도</div></div>
+    <div class="hd-item"><div class="hd-num">7</div><div class="hd-label">전문 서비스</div></div>
   </div>
 </div>
 </section>
@@ -491,7 +492,7 @@ footer{
       </div>
       <div class="about-block">
         <h3>10년차, 현장 경험</h3>
-        <p>서울·수도권 40개 이상의 건물을 관리해온 실전 노하우. 오피스, 주거, 도서관, 대학교까지 — 유형을 가리지 않습니다.</p>
+        <p>서울·수도권 다수의 건물을 관리해온 실전 노하우. 오피스, 주거, 도서관, 대학교까지 — 유형을 가리지 않습니다.</p>
       </div>
     </div>
   </div>
@@ -536,6 +537,18 @@ footer{
       <p>관리소장, 경비원, 미화원. 채용-교육-관리를 일괄로. 결원 시 즉시 대체 투입.</p>
       <span class="svc-arrow"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke-width="1.2"/></svg></span>
     </div>
+    <div class="svc-card">
+      <div class="svc-num">06</div>
+      <h3>소독</h3>
+      <p>정기 방역·소독으로 쾌적하고 위생적인 건물 환경을 유지합니다.</p>
+      <span class="svc-arrow"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke-width="1.2"/></svg></span>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">07</div>
+      <h3>관리비 부과</h3>
+      <p>관리비 산정부터 고지서 발행, 수납 관리까지. 정확하고 투명하게 처리합니다.</p>
+      <span class="svc-arrow"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke-width="1.2"/></svg></span>
+    </div>
   </div>
 </div>
 </section>
@@ -548,7 +561,6 @@ footer{
       <div class="port-label">Portfolio</div>
       <h2 class="port-title">관리 실적</h2>
     </div>
-    <div class="port-count">총 40건+</div>
   </div>
   <div class="port-grid">
     <div class="port-cell"><div class="port-cat">도서관</div><div class="port-name">용인 영덕도서관</div><div class="port-type">공공시설 통합관리</div></div>
@@ -608,7 +620,7 @@ footer{
           <div class="ct-dot"></div>
           <div>
             <div class="ct-key">Email</div>
-            <div class="ct-val">fairsyskorea1@gmail.com</div>
+            <div class="ct-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="781e19110a0b010b13170a1d1949381f15191114561b1715">[email&#160;protected]</a></div>
           </div>
         </div>
       </div>
@@ -670,9 +682,4 @@ footer{
       <div class="foot-info">
         주식회사 페어시스 | 대표 임은규<br>
         사업자등록번호 674-88-01564<br>
-        서울 서초구 방배중앙로 20, 3층<br>
-        02-318-8707 | fairsyskorea1@gmail.com
-      </div>
-    </div>
-    <div class="foot-links">
-      <a href="#abo
+        서울 서초구 방배중앙로 20, 3
