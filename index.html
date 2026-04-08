@@ -650,7 +650,7 @@ footer{
           <div class="ct-dot"></div>
           <div>
             <div class="ct-key">Email</div>
-            <div class="ct-val">fairsyskorea1@gmail.com</div>
+            <div class="ct-val"><span id="ctEmail"></span></div>
           </div>
         </div>
       </div>
@@ -717,7 +717,7 @@ footer{
         주식회사 페어시스 | 대표 임은규<br>
         사업자등록번호 674-88-01564<br>
         서울 서초구 방배중앙로 20, 3층<br>
-        02-318-8707 | fairsyskorea1@gmail.com
+        02-318-8707 | <span id="footEmail"></span>
       </div>
     </div>
     <div class="foot-links">
@@ -745,5 +745,10 @@ footer{
   </div>
 </div>
 
+<script>
+(function(){var u='fairsyskorea1',d='gmail.com',e=u+'@'+d;
+document.getElementById('ctEmail').textContent=e;
+document.getElementById('footEmail').textContent=e;})();
+</script>
 </body>
 </html>
