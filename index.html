@@ -663,7 +663,9 @@ footer{
       </div>
     </div>
     <div class="contact-right">
-      <form action="https://formspree.io/f/xbdpbgvp" method="POST" onsubmit="if(!document.getElementById('privacyAgree').checked){alert('개인정보 수집·이용에 동의해 주세요.');return false}">
+      <form action="https://formspree.io/f/xbdpbgvp" method="POST" 
+        onsubmit="if(!document.getElementById('privacyAgree').checked){alert('개인정보 수집·이용에 동의해 주세요.');return false}">
+      <input type="hidden" name="_next" value="https://www.fairsys.co.kr/thanks.html">
       <div class="form-title">견적 문의</div>
       <div class="field-row">
         <div class="field">
