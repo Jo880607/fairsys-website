@@ -1,0 +1,47 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.fairsys.co.kr" }],
+      "destination": "https://fairsys.co.kr/$1",
+      "permanent": true
+    },
+    {
+      "source": "/bbs/board.php",
+      "has": [{ "type": "query", "key": "bo_table", "value": "performance" }],
+      "destination": "/#portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/bbs/board.php",
+      "has": [{ "type": "query", "key": "bo_table", "value": "review" }],
+      "destination": "/#about",
+      "permanent": true
+    },
+    {
+      "source": "/bbs/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sub/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/llms.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    }
+  ]
+}
